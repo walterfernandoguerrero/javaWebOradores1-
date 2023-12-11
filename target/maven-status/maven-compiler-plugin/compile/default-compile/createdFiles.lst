@@ -1,0 +1,11 @@
+com\codoacodo\connection\Conexion.class
+com\codoacodo\dto\Persona.class
+com\codoacodo\controllers\CreateControllerOrador.class
+com\codoacodo\controllers\ConsultarController.class
+com\codoacodo\dto\Orador.class
+test\test.class
+com\codoacodo\controllers\EditarControllerOrador.class
+com\codoacodo\controllers\EliminarControllerOrador.class
+com\codoacodo\daos\OradorDAO.class
+com\codoacodo\controllers\ListadoControllerOrador.class
+com\codoacodo\controllers\BuscarController.class
