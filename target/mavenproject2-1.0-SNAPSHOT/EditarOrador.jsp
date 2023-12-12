@@ -23,7 +23,7 @@
                         Orador orad = (Orador)request.getAttribute("unOrador");
                     %>
                     
-                    <h3><%=orad.getId()%></h3>
+                    
                     
                     <h1 class="text-center my-4">Modificar Oradores</h1>
                     <!--  JSP -->

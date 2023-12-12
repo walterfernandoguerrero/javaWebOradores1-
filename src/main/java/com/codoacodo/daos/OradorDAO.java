@@ -171,8 +171,20 @@ public class OradorDAO {
 		return orador;
 	}
      //prueba de buscador
-    public List<Orador> buscar(String clave) {
-		String sql = "SELECT * FROM ORADORES WHERE apellido LIKE '%"+clave+"%' ";
+    public List<Orador> buscar(String clave, String campo) {
+                String sql;
+                 if("nombre".equals(campo)){
+                     sql = "SELECT * FROM ORADORES WHERE nombre LIKE '%"+clave+"%' ";
+                 }else{
+                     if("apellido".equals(campo)){
+                     sql = "SELECT * FROM ORADORES WHERE apellido LIKE '%"+clave+"%' ";
+                     }else{
+                         sql = "SELECT * FROM ORADORES WHERE tema LIKE '%"+clave+"%' ";
+                     }
+                 } 
+		
+                
+               //String sql = "SELECT * FROM ORADORES WHERE apellido LIKE '%"+clave+"%' ";
 		//Connection
 		Connection con = getConexion();
 		List<Orador> listado = new ArrayList<Orador>();

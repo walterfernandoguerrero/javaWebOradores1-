@@ -20,11 +20,18 @@ public class BuscarController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		String clave = req.getParameter("clave");
-		
+                String campo = req.getParameter("campo");
+                
+                System.out.println(campo);
+                
                 //prueba-------------------------------------------
                 OradorDAO dao = new OradorDAO();
+                
+                
+		
+                
 
-		List<Orador> listado = dao.buscar(clave);
+		List<Orador> listado = dao.buscar(clave,campo);
                 
 		//grabar el listado en el request para que lo vea la siguiente pagina
 		req.setAttribute("listado", listado);
