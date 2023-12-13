@@ -13,13 +13,20 @@
         <title>ALTA ORADORES</title>
     </head>
     <body>
+        <%@include file="navbar.jsp" %>
         <main>
             <!-- ACA VA EL NAVBAR  -->
-            <%@include file="navbar.jsp" %>
+            
             <div class="container">
+                <br><!-- comment -->
+                <br><!-- comment -->
+                <br><!-- comment -->
+                <br>
+                <!--  JSP -->
+                <!-- comment
                 <section class="border border-primary rounded-4 col-6 mx-auto text-center" style="background-color: aquamarine">
                     <h1 class="text-center my-4">Alta</h1>
-                    <!--  JSP -->
+                    
                     <form method="post"
                         action="<%=request.getContextPath()%>/CreateControllerOrador">
                         <div class="my-3 mx-3">
@@ -38,8 +45,42 @@
                             Dar de alta Orador
                         </button>
                     </form>
+                </section>   -->
+            </div>
+                <div class="container">
+                    <h1>Alta</h1>
+                    <!--  JSP -->
+                    <div id="frmAlta">
+                    <form method="post"
+                          action="<%=request.getContextPath()%>/CreateControllerOrador">
+                        <div class="Form">
+                          <label for="Nombre" class="form-label">Nombre</label>
+                          <input name="nombre"  type="text" class="form-control" id="txtnombre" placeholder="Nombre" maxlength="50">
+                        </div>
+
+                        <div class="Form">
+                          <label for="Apellido" class="form-label">Apellido</label>
+                          <input name="apellido" type="text" class="form-control" id="txtapellido" placeholder="Apellido">
+                        </div>
+
+                        <div class="Form">
+                          <label for="Mail" class="form-label">Mail</label>  
+                          <input name="mail" type="mail" class="form-control" id="txtmail" placeholder="Mail" >
+                        </div>
+
+                        <div class="Form">
+                          <label for="Tema" class="form-label">Tema</label>  
+                          <input name="tema" type="text" class="form-control" id="txttema"  placeholder="Tema">
+                        </div>
+
+                        <button class="button" id="miBoton">
+                            Dar de alta Orador
+                        </button>
+                    </form>
+                    </div>
                 </section>
             </div>
+                        
         </main>
                         <%@include file="footer.jsp" %>
     </body>

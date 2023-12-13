@@ -13,7 +13,8 @@
           <a class="nav-link" style="color: black" href="<%=request.getContextPath()%>/api/ListadoControllerOrador">Listado</a>
         </li>
       </ul>
-        <div style="border: 2px grey solid ;padding: 1% ;border-radius: 7px">
+        <!-- comment 
+        <div style="border: 2px grey solid;padding: 1%;border-radius: 7px">
             <form class="d-flex"	
               action="<%=request.getContextPath()%>/api/BuscarController" 
               method="get">
@@ -35,7 +36,7 @@
               <input name="clave" class="form-control me-2" type="search" placeholder="Texto Buscado" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
-         </div>  
+         </div>  -->
     </div>
   </div>
 </nav>

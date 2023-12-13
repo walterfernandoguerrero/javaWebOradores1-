@@ -19,6 +19,32 @@
         <%@include file="navbar.jsp" %>
         <h1>Listado de Oradores Editables</h1>
         <div class="container">
+            <!--Prueba de buscador -->
+            
+            <div style="border: 2px grey solid;padding: 1%;border-radius: 7px">
+            <form class="d-flex"	
+              action="<%=request.getContextPath()%>/api/BuscarController" 
+              method="get">
+
+                      <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="campo" id="rbtNombre" value="nombre">
+                              <label class="form-check-label" for="rbtNombre">Nombre</label>
+                      </div>
+                       <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="campo" id="rbtApellido" value="apellido">
+                              <label class="form-check-label" for="rbtApellido">Apellido</label>
+                      </div>
+                       <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="campo" id="rbtTema" value="tema">
+                              <label class="form-check-label" for="rbtTema">Tema</label>
+                      </div>
+
+
+              <input name="clave" class="form-control me-2" type="search" placeholder="Texto Buscado" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+         </div>  
+            
                 
                 <section class="bg-secondary-subtle border rounded-5 m-4 px-2 pt-2 pb-3 col-12 mx-auto text-center">
       <h2 class="my-4">Listado</h2>

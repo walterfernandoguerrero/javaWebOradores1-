@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:ital,wght@1,500&display=swap');
+
+
+:root{
+    --background-color:rgb(31,31,33);
+    --color-principal: rgb(211, 25, 25);
+    --color-texto: rgb(255, 255,255);
+    --color-hover: rgb(243,175,125);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;    
+}
+
+body{
+    background-image: url(Imagenes/imágenes/Oradores.png);    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    color: var(--color-texto);
+}
+
+header  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1480px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: black;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img{
+    width: 102%;
+    height: 94px;
+    margin-right: 5px;
+}
+
+header .menu-opciones{
+    height: auto;
+}
+
+header .menu-opciones ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header .menu-opciones li{
+    list-style: none;
+    margin: 30px;
+}
+
+header .menu-opciones a{
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header .menu-opciones a:hover{
+    color: var(--color-principal);
+}
+
+header .controles-usuario{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+    order: 1;
+}
+
+header .controles-usuario ion-icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--color-principal);
+
+}
+
+header .controles-usuario ion-icon:hover{
+    color: var(--color-hover);
+}
+
+header #btn-menu{
+    display: none;
+}
+
+@media(max-width: 865px){
+       header #btn-menu{
+        display: block;
+       }
+    header .menu-opciones{
+        height: 0;
+        overflow: hidden;
+        border-bottom: 2px solid var(--color-principal) ;
+        transition: height 0.5s ease;
+    }
+    header .menu-opciones.mostrar{
+        height: 280px;
+    }
+
+header .menu-opciones.min{
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+
+    header .menu-opciones ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.cuerpo{
+    background-image: url("https://www.altoastral.com.br/media/uploads/legacy/2016/08/falar_em_publico.jpg");
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+    object-position: bottom;
+    
+}
+    
+.contenedor{
+    background: url("https://previews.123rf.com/images/andreypopov/andreypopov2201/andreypopov220101334/180803800-evento-virtual-conferencia-o-convenci%C3%B3n-seminario-de-oradores-en-l%C3%ADnea.jpg");
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

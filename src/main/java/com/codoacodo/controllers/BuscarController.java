@@ -39,7 +39,10 @@ public class BuscarController extends HttpServlet {
                 
 		
 		//ir a la siguiente pagina
-		getServletContext().getRequestDispatcher("/listado.jsp").forward(req, resp);
+		//getServletContext().getRequestDispatcher("/listado.jsp").forward(req, resp);
+                //prueba 13/12
+                getServletContext().getRequestDispatcher("/listaOradores.jsp").forward(req, resp);
+                
               // resp.sendRedirect(req.getContextPath()+"/api/ListadoControllerOrador");
 	}
 }
