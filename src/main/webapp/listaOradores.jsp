@@ -15,9 +15,9 @@
         <%@include file="head.jsp" %>
         <title>LISTA ORADORES</title>
     </head>
-    <body>
+    <body id="listado">
         <%@include file="navbar.jsp" %>
-        <h1>Listado de Oradores Editables</h1>
+        <h1 style="text-align: center; padding: 1%;">Listado de Oradores Editables</h1>
         <div class="container">
             <!--Prueba de buscador -->
             
